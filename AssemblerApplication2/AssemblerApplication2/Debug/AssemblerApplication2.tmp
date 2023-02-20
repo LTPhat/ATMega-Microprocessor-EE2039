@@ -1,0 +1,29 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega324A"</DEVICE>
+ <WORKING_DIR>D:\VXL\AssemblerApplication2\AssemblerApplication2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\VXL\AssemblerApplication2\AssemblerApplication2\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m324Adef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\VXL\AssemblerApplication2\AssemblerApplication2\Debug\AssemblerApplication2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>AssemblerApplication2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>AssemblerApplication2.map</FILE>
+  <FILE>AssemblerApplication2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <FIRST><FILE>D:\VXL\AssemblerApplication2\AssemblerApplication2\main.asm</FILE><LINE>12</LINE></FIRST>
+  <SECOND><FILE>D:\VXL\AssemblerApplication2\AssemblerApplication2\main.asm</FILE><LINE>21</LINE></SECOND>
+  <THIRD><FILE>D:\VXL\AssemblerApplication2\AssemblerApplication2\main.asm</FILE><LINE>30</LINE></THIRD>
+ </LABELS>
+</ASSEMBLER_INFO>
