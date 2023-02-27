@@ -10,7 +10,7 @@ LDI     ZL, LOW($100 << 1)
 LDI     ZH, HIGHT($100 << 1) ; load 2 byte biễu diễn số thứ hai vào thanh ghi con trỏ Z
 
 LPM     R18, Z+; R18 chứa bit thấp của số thứ hai
-LPM     R19, Z; R19 chứa bit cao của số thứ hai
+LPM     R19, Z;  R19 chứa bit cao của số thứ hai
 
 ADD     R16, R18; cộng hai byte thấp, không cờ C
 ADC     R17, R19; cộng hai byte cao, có cờ nhớ C là kết quả từ việc cộng hai byte thấp
