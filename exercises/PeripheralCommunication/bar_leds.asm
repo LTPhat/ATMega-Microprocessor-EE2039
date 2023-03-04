@@ -20,18 +20,18 @@
 .ORG        0                   ; Mở đầu chương trình 
 RJMP        MAIN                ; Nhảy đến nhãn MAIN
 .ORG        0X40                ; Chương trình MAIN bắt đầu từ địa chỉ 0X40 để chừa vị trí từ 0X00 đến 0x3F cho việc thực hiện chương trình ngắt (nếu có)
-LDI         R16, HIGH(RAMEND)   ; Khai váo vùng Stack
-OUT         SPH, R16        
-LDI         R16, LOW(RAMEND)
-OUT         SPL, R16
-LDI         R16, 0XF0
-OUT         DDRB, R16           ; Khai báo 4 bit cuối của portB bằng 0, tạo chức năng nhập cho PB3-PB0
-LDI         R16, 0X0F           
-OUT         PORTB, R16          ; Khai báo điện trở kéo lên cho PB3-PB0
-LDI         R16, 0XFF
-OUT         DDRC, R16           ; Khai báo PORTC có chức năng xuất
-LDI         R16, 0X00
-OUT         PORTC, R16          ; Tất cả các LED ban đầu tắt
+MAIN:       LDI         R16, HIGH(RAMEND)   ; Khai váo vùng Stack
+            OUT         SPH, R16        
+            LDI         R16, LOW(RAMEND)
+            OUT         SPL, R16
+            LDI         R16, 0XF0
+            OUT         DDRB, R16           ; Khai báo 4 bit cuối của portB bằng 0, tạo chức năng nhập cho PB3-PB0
+            LDI         R16, 0X0F           
+            OUT         PORTB, R16          ; Khai báo điện trở kéo lên cho PB3-PB0
+            LDI         R16, 0XFF
+            OUT         DDRC, R16           ; Khai báo PORTC có chức năng xuất
+            LDI         R16, 0X00
+            OUT         PORTC, R16          ; Tất cả các LED ban đầu tắt
 WAIT_0:     LDI     R16, 50     ; Bắt đầu kiểm tra nhấn phím, kiểm tra 50 lần trạng thái nhấn
 BACK_1:     RCALL   GET_KEY
             BRCC    WAIT_0      ; Nếu hàm GET_KEY trả về kết quả cờ C = 0 (không có nút nhấn), quay về WAIT_0
