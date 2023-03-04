@@ -12,7 +12,7 @@
 
 
 .ORG    0
-SBI     DDRB, 7 ; Bit 7 của port B làm output
+SBI     DDRB, 7                 ; Bit 7 của port B làm output
 DELAY_tH:   SBI     PORTB, 7    ; Set trạng thái 1
             RCALL   DELAY_400
             CBI     PORT7, 7    ; Set trạng thái 0

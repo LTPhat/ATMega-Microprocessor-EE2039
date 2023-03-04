@@ -22,10 +22,10 @@ LAP:    SBI PORTB, 7        ; Set bit 7 của thanh ghi port B lên 1
         LDI R20, 250        ; Tạo delay T/2 cho trạng thái 1
 DELAY1:     NOP
             DEC     R20         ; Giảm n xuống 1
-            BRNE    DELAY       ; Lặp cho đến khi n = 0
+            BRNE    DELAY_1     ; Lặp cho đến khi n = 0
             CBI     PORTB, 7    ; Clear bit 7 của portB về 0
-DELAY2:     LDI     R20, 250    ; Tạo delay T/2 cho trạng thái 0
-            NOP
+            LDI     R20, 250    ; Tạo delay T/2 cho trạng thái 0
+DELAY_2     NOP
             DEC     R20
             BRNE    DELAY2
             RJMP    LAP         ; Quay trở lại chu kỳ tiếp theo    
