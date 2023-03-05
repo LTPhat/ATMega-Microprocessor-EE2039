@@ -19,8 +19,8 @@ DELAY_tH:   SBI     PORTB, 7    ; Set trạng thái 1
             LDI     R19, 4      ; Set m = 4
 DELAY_tL:   RCALL   DELAY_400
             DEC     R19
-            BRNE    LOOP
-            RJMP    LAP
+            BRNE    DELAY_tL
+            RJMP    DELAY_tH
 
 DELAY_400:          LDI     R21, 4
 OUTTER_LOOP:        LDI     R20, 200
