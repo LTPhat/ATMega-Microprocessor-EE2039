@@ -33,11 +33,10 @@ INC_POS:    INC     COUNT_POS   ; Tăng bộ đếm số dương lên 1
 INC_NEG:    INC     COUNT_NEG   ; Tăng bộ đếm số âm lên 1
             RJMP    COUNTER     ; Check counter
 COUNTER:    DEC     R20         ; Giảm bytes counter
-            BRNE    LAP         ; Quay lại vòng lặp nếu bytes counter chưa bằng 0
+            BRNE    LOOP        ; Quay lại vòng lặp nếu bytes counter chưa bằng 0
             RJMP    OUTPUT
 OUTPUT:     OUT     PORTC, COUNT_NEG    ; Xuất số số âm ra portC
             OUT     PORTD, COUNT_POS    ; Xuất số số dương ra portd
-            RJMP    EXIT
 EXIT:       RJMP    EXIT
 
 
