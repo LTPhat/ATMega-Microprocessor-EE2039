@@ -1,0 +1,40 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega324P"</DEVICE>
+ <WORKING_DIR>D:\VXL\AssemblerApplication1\FinalTerm\IO_Communication\LCD\LCD\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\VXL\AssemblerApplication1\FinalTerm\IO_Communication\LCD\LCD\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m324Pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\M324PDEF.INC</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\VXL\AssemblerApplication1\FinalTerm\IO_Communication\LCD\LCD\Debug\LCD.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>LCD.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>LCD.map</FILE>
+  <FILE>LCD.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MAIN><FILE>D:\VXL\AssemblerApplication1\FinalTerm\IO_Communication\LCD\LCD\main.asm</FILE><LINE>19</LINE></MAIN>
+  <DELAY_US><FILE>D:\VXL\AssemblerApplication1\FinalTerm\IO_Communication\LCD\LCD\main.asm</FILE><LINE>134</LINE></DELAY_US>
+  <OUT_LCD><FILE>D:\VXL\AssemblerApplication1\FinalTerm\IO_Communication\LCD\LCD\main.asm</FILE><LINE>125</LINE></OUT_LCD>
+  <INIT_LCD8><FILE>D:\VXL\AssemblerApplication1\FinalTerm\IO_Communication\LCD\LCD\main.asm</FILE><LINE>99</LINE></INIT_LCD8>
+  <START><FILE>D:\VXL\AssemblerApplication1\FinalTerm\IO_Communication\LCD\LCD\main.asm</FILE><LINE>54</LINE></START>
+  <TAB><FILE>D:\VXL\AssemblerApplication1\FinalTerm\IO_Communication\LCD\LCD\main.asm</FILE><LINE>147</LINE></TAB>
+  <FIRST_LINE><FILE>D:\VXL\AssemblerApplication1\FinalTerm\IO_Communication\LCD\LCD\main.asm</FILE><LINE>62</LINE></FIRST_LINE>
+  <DOWN><FILE>D:\VXL\AssemblerApplication1\FinalTerm\IO_Communication\LCD\LCD\main.asm</FILE><LINE>71</LINE></DOWN>
+  <SECOND_LINE><FILE>D:\VXL\AssemblerApplication1\FinalTerm\IO_Communication\LCD\LCD\main.asm</FILE><LINE>77</LINE></SECOND_LINE>
+  <WAIT><FILE>D:\VXL\AssemblerApplication1\FinalTerm\IO_Communication\LCD\LCD\main.asm</FILE><LINE>86</LINE></WAIT>
+  <HERE><FILE>D:\VXL\AssemblerApplication1\FinalTerm\IO_Communication\LCD\LCD\main.asm</FILE><LINE>89</LINE></HERE>
+  <L1><FILE>D:\VXL\AssemblerApplication1\FinalTerm\IO_Communication\LCD\LCD\main.asm</FILE><LINE>137</LINE></L1>
+  <L2><FILE>D:\VXL\AssemblerApplication1\FinalTerm\IO_Communication\LCD\LCD\main.asm</FILE><LINE>139</LINE></L2>
+ </LABELS>
+</ASSEMBLER_INFO>
