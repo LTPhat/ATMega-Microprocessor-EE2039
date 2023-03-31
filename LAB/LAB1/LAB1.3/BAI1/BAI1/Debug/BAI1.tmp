@@ -1,0 +1,40 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega324P"</DEVICE>
+ <WORKING_DIR>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m324Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\Debug\BAI1.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>BAI1.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>BAI1.map</FILE>
+  <FILE>BAI1.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MAIN><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\main.asm</FILE><LINE>14</LINE></MAIN>
+  <RESET_LCD><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\main.asm</FILE><LINE>104</LINE></RESET_LCD>
+  <INIT_LCD4><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\main.asm</FILE><LINE>86</LINE></INIT_LCD4>
+  <START><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\main.asm</FILE><LINE>26</LINE></START>
+  <OUT_LCD4_2><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\main.asm</FILE><LINE>66</LINE></OUT_LCD4_2>
+  <DELAY_US><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\main.asm</FILE><LINE>128</LINE></DELAY_US>
+  <TAB><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\main.asm</FILE><LINE>140</LINE></TAB>
+  <LINE1><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\main.asm</FILE><LINE>37</LINE></LINE1>
+  <DOWN><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\main.asm</FILE><LINE>44</LINE></DOWN>
+  <LINE2><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\main.asm</FILE><LINE>50</LINE></LINE2>
+  <DONE><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\main.asm</FILE><LINE>57</LINE></DONE>
+  <OUT_LCD4><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\main.asm</FILE><LINE>60</LINE></OUT_LCD4>
+  <LP1><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\main.asm</FILE><LINE>131</LINE></LP1>
+  <LP2><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI1\BAI1\main.asm</FILE><LINE>133</LINE></LP2>
+ </LABELS>
+</ASSEMBLER_INFO>

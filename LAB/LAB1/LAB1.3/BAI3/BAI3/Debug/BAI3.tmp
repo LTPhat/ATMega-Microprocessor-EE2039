@@ -1,0 +1,54 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega324P"</DEVICE>
+ <WORKING_DIR>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m324Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\Debug\BAI3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>BAI3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>BAI3.map</FILE>
+  <FILE>BAI3.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset_handler><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>24</LINE></reset_handler>
+  <LCD_Init><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>87</LINE></LCD_Init>
+  <start><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>40</LINE></start>
+  <KEY_PAD_SCAN><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>269</LINE></KEY_PAD_SCAN>
+  <CLEAR><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>78</LINE></CLEAR>
+  <ALPHA><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>64</LINE></ALPHA>
+  <LCD_Move_Cursor><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>175</LINE></LCD_Move_Cursor>
+  <LCD_Send_String><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>199</LINE></LCD_Send_String>
+  <LCD_Send_Command><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>110</LINE></LCD_Send_Command>
+  <DELAY_10MS><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>257</LINE></DELAY_10MS>
+  <LCD_wait_busy><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>226</LINE></LCD_wait_busy>
+  <LCD_Send_Data><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>139</LINE></LCD_Send_Data>
+  <LCD_Move_Cursor_Second><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>185</LINE></LCD_Move_Cursor_Second>
+  <LCD_Move_Cursor_Exit><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>193</LINE></LCD_Move_Cursor_Exit>
+  <LCD_Send_String_01><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>208</LINE></LCD_Send_String_01>
+  <LCD_Send_String_02><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>218</LINE></LCD_Send_String_02>
+  <LCD_wait_busy_loop><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>233</LINE></LCD_wait_busy_loop>
+  <LOOP2><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>259</LINE></LOOP2>
+  <LOOP1><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>261</LINE></LOOP1>
+  <BUTTON><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>334</LINE></BUTTON>
+  <KEYPAD_SCAN_LOOP><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>285</LINE></KEYPAD_SCAN_LOOP>
+  <KEYPAD_SCAN_CHECK_COL2><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>291</LINE></KEYPAD_SCAN_CHECK_COL2>
+  <KEYPAD_SCAN_FOUND><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>320</LINE></KEYPAD_SCAN_FOUND>
+  <KEYPAD_SCAN_CHECK_COL3><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>298</LINE></KEYPAD_SCAN_CHECK_COL3>
+  <KEYPAD_SCAN_CHECK_COL4><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>305</LINE></KEYPAD_SCAN_CHECK_COL4>
+  <KEYPAD_SCAN_NEXT_ROW><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>312</LINE></KEYPAD_SCAN_NEXT_ROW>
+  <KEYPAD_SCAN_NOT_FOUND><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>330</LINE></KEYPAD_SCAN_NOT_FOUND>
+  <DEBOUNCING_1><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI3\BAI3\main.asm</FILE><LINE>336</LINE></DEBOUNCING_1>
+ </LABELS>
+</ASSEMBLER_INFO>

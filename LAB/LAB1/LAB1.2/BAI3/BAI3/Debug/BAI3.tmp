@@ -1,0 +1,39 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega324P"</DEVICE>
+ <WORKING_DIR>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI3\BAI3\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI3\BAI3\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m324Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI3\BAI3\Debug\BAI3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>BAI3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>BAI3.map</FILE>
+  <FILE>BAI3.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI3\BAI3\main.asm</FILE><LINE>15</LINE></main>
+  <initport><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI3\BAI3\main.asm</FILE><LINE>23</LINE></initport>
+  <cleardata><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI3\BAI3\main.asm</FILE><LINE>28</LINE></cleardata>
+  <recall><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI3\BAI3\main.asm</FILE><LINE>19</LINE></recall>
+  <shiftoutdata><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI3\BAI3\main.asm</FILE><LINE>34</LINE></shiftoutdata>
+  <shift_on><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI3\BAI3\main.asm</FILE><LINE>39</LINE></shift_on>
+  <begin_shift_off><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI3\BAI3\main.asm</FILE><LINE>48</LINE></begin_shift_off>
+  <DELAY_500MS><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI3\BAI3\main.asm</FILE><LINE>61</LINE></DELAY_500MS>
+  <shift_off><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI3\BAI3\main.asm</FILE><LINE>50</LINE></shift_off>
+  <Retired><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI3\BAI3\main.asm</FILE><LINE>59</LINE></Retired>
+  <LOOP3><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI3\BAI3\main.asm</FILE><LINE>63</LINE></LOOP3>
+  <LOOP1><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI3\BAI3\main.asm</FILE><LINE>65</LINE></LOOP1>
+  <LOOP2><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI3\BAI3\main.asm</FILE><LINE>67</LINE></LOOP2>
+ </LABELS>
+</ASSEMBLER_INFO>

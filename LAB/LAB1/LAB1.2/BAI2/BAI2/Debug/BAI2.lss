@@ -1,0 +1,20 @@
+
+AVRASM ver. 2.2.8  D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm Fri Mar 31 20:16:37 2023
+
+[builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m324Pdef.inc'
+D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm(24): error: Duplicate label: 'DELAY_1MS'
+D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm(26): error: Duplicate label: 'LOOP1'
+D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm(28): error: Duplicate label: 'LOOP2'
+D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm(39): error: Duplicate label: 'LOOP1'
+D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm(41): error: Duplicate label: 'LOOP2'
+D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm(53): error: Duplicate label: 'LOOP1'
+D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm(55): error: Duplicate label: 'LOOP2'
+D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm(69): error: Duplicate label: 'LOOP3'
+D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm(71): error: Duplicate label: 'LOOP1'
+D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm(73): error: Duplicate label: 'LOOP2'
+D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm(89): error: Duplicate label: 'START_LOOP'
+D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm(96): error: Duplicate label: 'DELAY_1S'
+D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm(98): error: Duplicate label: 'LOOP4'
+D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm(100): error: Duplicate label: 'LOOP3'
+D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm(102): error: Duplicate label: 'LOOP1'
+D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.2\BAI2\BAI2\main.asm(104): error: Duplicate label: 'LOOP2'

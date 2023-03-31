@@ -1,0 +1,31 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega324P"</DEVICE>
+ <WORKING_DIR>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI2\BAI2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI2\BAI2\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m324Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI2\BAI2\Debug\BAI2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>BAI2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>BAI2.map</FILE>
+  <FILE>BAI2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <lcd_send_command><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI2\BAI2\main.asm</FILE><LINE>35</LINE></lcd_send_command>
+  <loop><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI2\BAI2\main.asm</FILE><LINE>26</LINE></loop>
+  <lcd_send_data><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI2\BAI2\main.asm</FILE><LINE>91</LINE></lcd_send_data>
+  <LCD_wait_busy><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI2\BAI2\main.asm</FILE><LINE>60</LINE></LCD_wait_busy>
+  <LCD_wait_busy_loop><FILE>D:\VXL\AssemblerApplication1\LAB\LAB1\LAB1.3\BAI2\BAI2\main.asm</FILE><LINE>69</LINE></LCD_wait_busy_loop>
+ </LABELS>
+</ASSEMBLER_INFO>
