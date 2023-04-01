@@ -1,0 +1,33 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega324P"</DEVICE>
+ <WORKING_DIR>D:\VXL\AssemblerApplication1\FinalTerm\Timer\LedTimer\LedTimer\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\VXL\AssemblerApplication1\FinalTerm\Timer\LedTimer\LedTimer\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m324Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\VXL\AssemblerApplication1\FinalTerm\Timer\LedTimer\LedTimer\Debug\LedTimer.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>LedTimer.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>LedTimer.map</FILE>
+  <FILE>LedTimer.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MAIN><FILE>D:\VXL\AssemblerApplication1\FinalTerm\Timer\LedTimer\LedTimer\main.asm</FILE><LINE>18</LINE></MAIN>
+  <START><FILE>D:\VXL\AssemblerApplication1\FinalTerm\Timer\LedTimer\LedTimer\main.asm</FILE><LINE>34</LINE></START>
+  <SW_PRESS><FILE>D:\VXL\AssemblerApplication1\FinalTerm\Timer\LedTimer\LedTimer\main.asm</FILE><LINE>37</LINE></SW_PRESS>
+  <SW_RELEASE><FILE>D:\VXL\AssemblerApplication1\FinalTerm\Timer\LedTimer\LedTimer\main.asm</FILE><LINE>43</LINE></SW_RELEASE>
+  <BACK><FILE>D:\VXL\AssemblerApplication1\FinalTerm\Timer\LedTimer\LedTimer\main.asm</FILE><LINE>45</LINE></BACK>
+  <DELAY_1S><FILE>D:\VXL\AssemblerApplication1\FinalTerm\Timer\LedTimer\LedTimer\main.asm</FILE><LINE>57</LINE></DELAY_1S>
+  <WAIT><FILE>D:\VXL\AssemblerApplication1\FinalTerm\Timer\LedTimer\LedTimer\main.asm</FILE><LINE>62</LINE></WAIT>
+ </LABELS>
+</ASSEMBLER_INFO>
