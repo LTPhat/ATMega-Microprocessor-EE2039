@@ -1,0 +1,29 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega324P"</DEVICE>
+ <WORKING_DIR>D:\VXL\AssemblerApplication1\FinalTerm\Timer\CTCmode\CTCmode\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\VXL\AssemblerApplication1\FinalTerm\Timer\CTCmode\CTCmode\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m324Pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\M324PDEF.INC</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\VXL\AssemblerApplication1\FinalTerm\Timer\CTCmode\CTCmode\Debug\CTCmode.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>CTCmode.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>CTCmode.map</FILE>
+  <FILE>CTCmode.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MAIN><FILE>D:\VXL\AssemblerApplication1\FinalTerm\Timer\CTCmode\CTCmode\main.asm</FILE><LINE>21</LINE></MAIN>
+  <START><FILE>D:\VXL\AssemblerApplication1\FinalTerm\Timer\CTCmode\CTCmode\main.asm</FILE><LINE>34</LINE></START>
+ </LABELS>
+</ASSEMBLER_INFO>
