@@ -1,0 +1,30 @@
+Các thanh ghi điều khiển và trạng thái UCSRnA, UCSRnB, UCSRnC
+
+
+1) UCSRnA: thanh ghi 8 bit thuộc I/O mở rồng
+
+- Bit 7 (RXCn: Receive Complete): Đặt lên 1 khi có dữ liệu mới trong bộ đệm thu chưa được đọc, xóa về 0 khi bộ đệm thu trống
+- Bit 6 (TXCn: Transmit Complete): Đặt lên 1 khi toàn bộ dữ liệu của một frame trong thanh ghi dịch phát được tuyền hết ra chân TxD
+- Bit 5 (UDREn): Đặt lên 1 khi dữ liệu trong bộ đệm phát chuyển đến thanh ghi dịch phát, khi UDREn = 0 không nên ghi dữ liệu mới vào thanh ghi UDRn
+- Bit 4 (FEn): Frame Error -> Bằng 1 khi ký tự tiếp theo trong bộ đệm thu bị lỗi khung truyền
+....
+....
+- Bit 1(U2Xn): Nhân đôi Baud rate
+
+2) UCSRnB
+- Bit 4 (RXENn: Receive Enable): Bằng 1 cho phép thu, bằng 0 không cho phép thu
+- Bit 3 (TXENn: Transmitter Enable): Bằng 1 cho phép phát, bằng 0 không cho phép phát
+- Bit 2: (UCSZn2: Character Size): Kết hợp với 2 bit UCSZn1 và UCSZn0 trong thanh ghi UCSRnC chỉ định độ dài của dữ liệu phát/ thu (5-9 bit)
+- Bit 1: (RXB8n: Receive data bit 8) -> Bit dữ liệu thứ 8 (trong chế độ phát/thu 8 bit) hay bit dữ liệu thứ 9 (trong chế độ phát/ thu 9 bit)
+-> Trong chế độ 9bit nội dung bit 9 phải được đọc từ RXB8n trước khi đọc các bit dữ liệu thấp trong bộ đệm thu UDRn
+- Bit 0: (TXB8n: Transmit data bit 8): Bit dữ liệu thứ 8 (trong chế độ phát/thu 8 bit) hay bit dữ liệu thứ 9 (trong chế độ phát/ thu 9 bit)
+-> Trong chế độ 9bit nội dung bit 9 phải được ghi vào TXB8n trước khi ghi vào các bit dữ liệu thấp trong bộ đệm phát UDRn
+
+3) Thanh ghi UCSRnC
+- Bit 7:6 UMSELn[1:0]: USART mode select
+- Bit 5:4 UPMn[1:0]: Party mode
+- Bit 3: USBSn: Stop Bit Select (1 stop bit USBSn = 0, 2 stop bit USBSn = 1)
+- Bit 2:1 UCSZn[1:0] kết hợp với UCSZn2 của thanh ghi UCSRnB để thiết lập số bit dữ liệu
+000-> 5; 001-> 6; 010: 7; 011 -> 8; 111-> 9
+- Bit 0 UCPOLn (UCPOLn = 1: Phát cạnh lên, thu cạnh xuống của xung XCLn; UCPOLn = 0 ngược lại)
+

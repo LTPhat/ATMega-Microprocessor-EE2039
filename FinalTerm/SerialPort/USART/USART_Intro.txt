@@ -1,0 +1,47 @@
+USART gồm 3 khối chức năng chính: Khối tạo xung clock, khối phát, khối thu
+
+
+Cấu hình tốc độ Baud: UBRR[H:L] nằm trong khối clock
+
+
+Bộ phát gồm 1 bộ đệm phát chỉ cho phép ghi (UDRn), một thanh ghi dịch nối tiếp, khối tạo bit kiểm tra chẵn lẽ (Party Generator)
+
+
+Bộ thu gồm các khối kiểm tra bit kiểm tra chẵn lẻ thu được (Party checker), khối điều khiển logic, thanh ghi dịch, 1 bộ đệm thu FIFO 2 mức UDRn
+
+
+Việc lựa chọn truyền thông nói tiếp bất đồng bộ và đồng nộ được điều khiển bởi bit UMSELn0 (bit 0 trong thanh ghi USCRnC)
+- UMSELn0 = 0: Truyền thông nối tiếp bất đồng Bộ
+- UMSELn0 = 1: Truyền thông nối tiếp đồng Bộ
+
+
+Trong chế độ đồng bộ:
+- gấp đôi baud rate được điều khiển bởi U2Xn (bit 1 trong thanh ghi USCRnA)
+- Bit trong thanh ghi định hướng dữ liệu cho chân XCKn cho phép điểu khiển nguồn xung clock là clock nội(Master mode) hay clock ngoại (Slave mode)
+
+Clock nội:
+
+Baud rate: 2^{U2Xn}.f_{osc}/[16(UBRR+1)]
+
+Thanh ghi UBRR 16 bit (H-L) nhưng có các bit [15:12] là các bit dành riêng chưa được định nghĩa --> Tạo baud rate
+
+Clock ngoài: Dùng trong chế độ Slave mode
+
+Hoạt động clock đồng Bộ
+
+Khi UMSELn = 1, chân XCKn được dùng như clock ngõ vào (Slave mode) hoặc clock ngõ ra (Master mode), dữ liệu thu vào trên chân (RxDn) và phát ra trên chân (TxDn)
+được lấy mẫu và thay đổi tại những cạnh khác nhau của xung clock XCKn
+
+- Bit ULPOLn (bit 0 trong thanh ghi UCSRnC) : 1 (thay đổi dữ liệu ở cạnh lên xung XCKn), 0 (thay đổi dữ liệu ở cạnh xuống XCKn) 
+
+
+
+
+THANH GHI UDRn: Thanh ghi dịch phát và thanh ghi dịch thu, mỗi thanh ghi 8 bit kết nối với bộ đệm tương ứng
+
+UDRn transmit chỉ có thể ghi dữ liệu ới khi cờ UDREn (bit 5 của USCRnA) bằng 1
+Khi UDREn = 1, và TXEN = : Bộ phát chuyển dữ liệu ghi từ UDRn vào thanh ghi dịch phát -> Dữ liệu sẽ được phát nối tiếp ra chân TxDn
+
+Bộ đệm thu chỉ có thể đọc dữ liệu khi cờ RXCn (bit 7 trong USCRnA) bằng 1
+
+
