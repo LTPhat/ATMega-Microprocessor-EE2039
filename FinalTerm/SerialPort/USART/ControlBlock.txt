@@ -18,11 +18,11 @@ Các thanh ghi điều khiển và trạng thái UCSRnA, UCSRnB, UCSRnC
 - Bit 1: (RXB8n: Receive data bit 8) -> Bit dữ liệu thứ 8 (trong chế độ phát/thu 8 bit) hay bit dữ liệu thứ 9 (trong chế độ phát/ thu 9 bit)
 -> Trong chế độ 9bit nội dung bit 9 phải được đọc từ RXB8n trước khi đọc các bit dữ liệu thấp trong bộ đệm thu UDRn
 - Bit 0: (TXB8n: Transmit data bit 8): Bit dữ liệu thứ 8 (trong chế độ phát/thu 8 bit) hay bit dữ liệu thứ 9 (trong chế độ phát/ thu 9 bit)
--> Trong chế độ 9bit nội dung bit 9 phải được ghi vào TXB8n trước khi ghi vào các bit dữ liệu thấp trong bộ đệm phát UDRn
+-> Trong chế độ 9 bit nội dung bit 9 phải được ghi vào TXB8n trước khi ghi vào các bit dữ liệu thấp trong bộ đệm phát UDRn
 
 3) Thanh ghi UCSRnC
-- Bit 7:6 UMSELn[1:0]: USART mode select
-- Bit 5:4 UPMn[1:0]: Party mode
+- Bit 7:6 UMSELn[1:0]: USART mode select (00: Bất đồng bộ, 01: Đồng bộ)
+- Bit 5:4 UPMn[1:0]: Party mode (00: No party, 10: Party chẵn, 11: Party lẻ)
 - Bit 3: USBSn: Stop Bit Select (1 stop bit USBSn = 0, 2 stop bit USBSn = 1)
 - Bit 2:1 UCSZn[1:0] kết hợp với UCSZn2 của thanh ghi UCSRnB để thiết lập số bit dữ liệu
 000-> 5; 001-> 6; 010: 7; 011 -> 8; 111-> 9
