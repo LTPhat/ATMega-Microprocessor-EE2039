@@ -1,0 +1,23 @@
+Các MCU đều có cấu hình ngắt, cho phép đáp ứng tức thời 1 yêu cầu ngắt, chương trình chính sẽ tạm thời thực hiện theo trình tự hỏi vòng, chuyển sang phục vụ đoạn chương trình đáp ứng theo yêu cầu ngắt (ISR)
+ISR giống chương trình con, khi bắt đầu thực hiện ISR hay chương trình con MCU phải cất địa chỉ kế tiếp của ct trình vào stack và phục hồi sau khi địa chỉ này kết thúc
+Đặc điểm của ISR:
+- ISR lưu các trạng thái yêu cầu ngắt hiện hành và mức ưu tiên ngắt
+- Kết thúc ISR là lệnh RETI thay vì RET
+- ISR bắt đầu tại một địa chỉ cố định của Flash ROM gọi là vecto ngắt
+- ISR có thể thực hiện tại bất kỳ thời điểm nào trong chương trình chính khi có tín hiệu yêu cầu
+
+MCU324P có 31 nguồn ngắt phân thành 6 nhóm chính:
+- Ngắt hệ thống: Ngắt khởi động RESET, ngắt TIMER giám sát WDT, ngắn sẵn sàng lưu bộ nhớ chương trình SPM_READY
+- Ngắt Timer: 10 nguồn ngắt báo tràn, ngắt báo kết quả so sánh trên kênh A, B của các Timer 0/1/2, ngắt bắt ngõ vào Timer1
+- Ngắt cổng nối tiếp: 8 nguồn ngắt cổng USART0/1, ngắt SPI, ngắt I2C
+- Ngắt tương tự: 2 nguồn ngắt ADC, ngắt ADCOMP
+- Ngắt ngoài: 
+- Ngắt bộ nhớ EEROM: 1 nguồn ngắt EEROM
+
+
+Cho phép ngắt và cấm nguồn ngắt: 
+- Cờ I (bit 7 thanh ghi SREG) cho phép/ cấm ngắt toàn cục
+- Cho phép/cấm ngắt cục bộ: Các bit này tập trung ở một số thanh ghi thuộc chức năng của các phần cứng
+
+
+Mức ưu tiên ngắt: Nguồn ngắt có vecto ngắt địa chỉ thấp sẽ được ưu tiên cao hơn
