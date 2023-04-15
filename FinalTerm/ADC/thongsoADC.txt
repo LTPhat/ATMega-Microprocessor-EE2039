@@ -1,0 +1,6 @@
+1- Độ phân giải: Là số bước lượng tử hóa, phụ thuộc vào số bit nhị phân N biểu diễn giá trị số ADC
+    RES = Vref/2^N
+2- Điện áp tham chiếu Vref: Là điện áp ngõ vào tham chiếu cho ADC xác định theo độ phân giải. Điện áp ngõ vào ADC Vin <= Vref
+3- Thời gian chuyển đổi (Conversion Time)
+4- Giá trị số ngõ ra:
+    Dout = Vin/RES = Vin x 2^N/Vref

@@ -1,0 +1,38 @@
+MEM = 0x7C: ADMUX (Multiplexer Select Register): Thanh ghi chọn hợp kênh ->Chọn Vref và kênh ADC ngõ vào
+- Bit 7:6(REFS1:REFS0 Refernce Selection Bits): Chọn nguồn Vref cho ADC
+REFS1:REFS0 = 00 -> Chọn Vref = AREF (nguồn trong tắt)
+REFS1:REFS0 = 01 -> Chọn Vref = AVcc, có C = 100nF gắn ở chân AREF
+REFS1:REFS0 = 10 -> Chọn Vref = 1.1 V nguồn trong, có C = 100nF gắn ở chân AREF
+REFS1:REFS0 = 11 -> Chọn Vref = 2.56V nguồn trong, có C = 100nF gắn ở chân AREF
+(Không được sử dụng nguồn Vref nội khi đang có nguồn ngoài áp vào chân AREF)
+- Bit 5 (ADLAR: Left Adjust Result): Quyết định kết quả đọc giá trị ADC trong thanh ghi ADCH/ADCL
+ADLAR = 1: 10 bit ADC dịch trái, không sử dụng 6bit thấp của ADCL (Hiệu chỉnh trái)
+ADLAR = 0: 10 bit ADC dịch phải, không sử dụng 6bit thấp của ADCH (Hiệu chỉnh phải)
+- Bit 4:0 (MUX4:MUX0 Analog Channel and Gain Selection Bits): Cài đặt chọn ngõ vào đơn (SE) hay vi sai (DIF) và độ lợi tương ứng
+
+
+
+MEM = 0x7A: ADCSRA(Control and Status Register A): Điều khiển và trạng thái ADC A
+- Bit 7 (ADEN ADC Enable): ADEN = 1 cho phép ADC làm việc và ngược lại. Nên xóa ADEN = 0 khi không sử dụng ADC
+- Bit 6 (ADSC ADC Start Conversion): ADSC = 1, ADC bắt đầu chuyển đổi, khi chuyển đổi xong phần cứng sẽ xóa ADSC = 0
+- Bit 5 (ADATE ADC Auto Trigger Enable): Cho phép ADC chạy mô thức tự kích, ADC bắt đầu chuyển đổi từ cạnh lên của tín hiệu kích khởi được chọn (Nguồn phát tín hiệu kích khởi được chọn từ các bit ADTS2:0 của thanh ghi ADCSRB)
+- Bit 4 (ADIF ADC Interrupt Flag): ADC chuyển đổi xong, cờ ADIF = 1 báo kết thúc chuyển đổi. Nếu ADIE = 1 và bit I = 1(I thuộc SREG), ADIF = 1 báo ngắt ADC. Cờ ADIF tự động xóa khi MCU chuyển đến trình phục vụ ngắt ADC\
+- Bit 3 (ADIE ADC Interrupt Enable): ADIE và bit I cùng bằng 1 cho phép ngắt xảy ra khi ADIF = 1 báo ADC chuyển đổi xong
+- Bit 2:0 (ADPS2:ADPS0 Prescale Select Bits): Chọn hệ số chia đặt trước cho Fosc tạo xung CLK ADC
+MEM = 0x79:0x78 ->ADCH:ADCL: Giá trị ADC byte cao/Giá trị ADC byte thấp
+Khi ADC chuyển đổi xong kết quả dữ liệu 10 bit được cập nhật vào thanh ghi ADCH/ADCL, kết quả được hiệu chỉnh thông qua thanh ghi ADLAR 
+
+
+
+Mem = 0x7B ADCSRB: Điều khiển và trạng thái ADCB
+- Bit 2:0 (ADTS2:ADTS0 ADC Auto Trigger Source): Nếu bit ADATE của ADCSRA = 1, các bit ADTS2:ADTS0 chọn nguồn tín hiệu kích khởi ADC bắt đầu chuyển đổi
+Tín hiệu kích khởi ADC bắt đầu chuyển đổi là cạnh lên của các cờ báo ngắ của nguồn tạo tín hiệu kích khởi tương ứng
+
+
+Mem = 0x7E DIDR0: Cấm ngõ vào số ADC
+Khi ghi các bit thanh ghi này bằng 1, bộ đệm ngõ vào số tương ứng bị cấm, các bit của thanh ghi có chân tương ứng luôn đọc được bằng 0
+
+Các mô thức làm việc
+- Chuyển đổi 1 lần - Single Conversion
+- Chạy tự do - Free run
+- Tự kích - Auto Trigger
