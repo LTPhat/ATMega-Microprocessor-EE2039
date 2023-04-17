@@ -1,0 +1,15 @@
+MCU 324P có cấu hình 4 cổng nối tiếp gồm USART0, USART1, SPI, TWI (I2C) có tất cả 8 nguồn ngắt
+- USART0 có 3 nguồn ngắt: Ngắt thu xong, ngắt bộ đệm phát trống, ngắt phát xong
+- USART1 có 3 nguồn ngắt Ngắt thu xong, ngắt bộ đệm phát trống, ngắt phát xong
+- SPI: Ngắt truyền SPI xong
+- TWI: Ngắn truyền dữ liệu TWI xong
+
+
+Ngắt cổng USART0/1
+- Ngắt thu USART0: Xảy ra khi thu xong một ký tự, bộ đệm thu đầy và chờ đọc, cờ RXC0 = 1 là tín hiệu báo ngắt, bít RXCIE0 = 1 cho phép ngắt
+- Ngắt phát USART0: Xảy ra khi phát xong một ký tự, bộ đệm phát trống, cờ TXC0 = 1 là tín hiệu báo ngắt, bit TXCIE0 = 1 cho phép ngắt
+- Ngắt bộ đệm phát: Xảy ra khi bộ đệm phát UDR0 trống sẵn sàng nhận dữ liệu mới, cờ UDRE0= 1 là tín hiệu báo ngắt, UDRIE0 = 1 cho phép ngắt
+
+
+! Khi ngắn bộ đệm phát USART_UDRE, cờ UDRE0 chỉ được xóa khi ghi dữ liệu vào thanh ghi UDR0
+! Ngắt thu xong USART0_RX, cờ RXC0 chỉ được xóa khi đọc dữ liệu từ thanh ghi UDR0

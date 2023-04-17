@@ -2,13 +2,12 @@
 
 ; Chọn Timer2 chạy trong mô thức NOR, hệ số chia N = 64, thời gian đếm mức 1 là 37 xung, thời gian đếm mức 2 là 87 xung
 
-
 .EQU    P_OUT = 5
 .EQU    T_HIGH = -37
 .EQU    T_LOW = -87
 .ORG    0
 RJMP    MAIN
-.ORG    0x16       ; Vecto ngắt của ISR TIMER2_OVF
+.ORG    0x16                ; Vecto ngắt của ISR TIMER2_OVF
 RJMP    TIMER2_OVER_ISR
 .ORG    0x40
 MAIN:
