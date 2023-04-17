@@ -12,6 +12,9 @@ Các thanh ghi điều khiển và trạng thái UCSRnA, UCSRnB, UCSRnC
 - Bit 1(U2Xn): Nhân đôi Baud rate
 
 2) UCSRnB
+- Bit 7 (RXCIEn: RX Complete Interrupt Enable): Cho phép ngắt thu
+- Bit 6 (TXCIEn: TX Complete Interrupt Enable): Cho phép ngắt phát
+- Bit 5 (UDRIEn: USART Data Register Empty Interrupt Enable): Cho phép ngắt bộ đệm phát
 - Bit 4 (RXENn: Receive Enable): Bằng 1 cho phép thu, bằng 0 không cho phép thu
 - Bit 3 (TXENn: Transmitter Enable): Bằng 1 cho phép phát, bằng 0 không cho phép phát
 - Bit 2: (UCSZn2: Character Size): Kết hợp với 2 bit UCSZn1 và UCSZn0 trong thanh ghi UCSRnC chỉ định độ dài của dữ liệu phát/ thu (5-9 bit)
@@ -27,4 +30,3 @@ Các thanh ghi điều khiển và trạng thái UCSRnA, UCSRnB, UCSRnC
 - Bit 2:1 UCSZn[1:0] kết hợp với UCSZn2 của thanh ghi UCSRnB để thiết lập số bit dữ liệu
 000-> 5; 001-> 6; 010: 7; 011 -> 8; 111-> 9
 - Bit 0 UCPOLn (UCPOLn = 1: Phát cạnh lên, thu cạnh xuống của xung XCLn; UCPOLn = 0 ngược lại)
-
