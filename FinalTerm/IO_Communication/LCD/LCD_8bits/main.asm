@@ -28,7 +28,7 @@ MAIN:
 	LDI		R16, 0XFF
 	OUT		DDRB, R16	; PortB output
 
-// Reset source provision - LCD set up
+; Reset source provision - LCD set up
 	LDI		R16, 250	; delay 25ms
 	RCALL	DELAY_US	; module delay_us x R16
 	LDi		R16, 250	; delay 25ms twice
