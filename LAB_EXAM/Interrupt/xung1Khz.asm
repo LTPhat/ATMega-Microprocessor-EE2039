@@ -1,0 +1,48 @@
+;a)	Lập trình tạo một xung tần số 1 Khz trên chân PC0 sử dụng ngắt timer 1 overflow. Khi timer 1 tràn, trong chương trình phục vụ ngắt đảo chân PC0 và đặt lại giá trị cho thanh ghi đếm
+
+
+
+.EQU PORT_OUT=0
+.ORG 0X00
+RJMP MAIN
+.ORG 0X0024
+RJMP TIMER0_OVF_ISR
+.ORG 0X0040
+MAIN:
+SBI DDRC,1
+CBI PORTC,1
+LDI R19,1
+LDI R16,HIGH(RAMEND)
+OUT SPH,R16
+LDI R16,LOW(RAMEND)
+OUT SPL,R16
+
+
+LDI R16,(1<<PORT_OUT)
+OUT DDRC,R16
+CBI PORTC,PORT_OUT
+
+
+LDI R16,-62
+OUT TCNT0,R16
+LDI R16,0
+OUT TCCR0A,R16
+LDI R16,$03
+OUT TCCR0B,R16
+SEI
+LDI R16,(1<<TOIE0)
+STS TIMSK0,R16
+START:
+RJMP START
+;===========================================================
+TIMER0_OVF_ISR:
+LDI R17,0
+OUT TCCR0B,R17
+LDI R17,-62
+OUT TCNT0,R17
+IN R17,PORTC
+EOR R17,R19
+OUT PORTC,R17
+LDI R16,$03
+OUT TCCR0B,R16
+RETI

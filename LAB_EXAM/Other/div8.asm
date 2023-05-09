@@ -1,0 +1,15 @@
+;.............................
+;CTC PHEP CHIA R17:R16
+;TRA VE R17=KQ ;R18= SO DU
+DIV8_8:
+		CLC
+		CLR R18
+L3:		INC R18
+		SUB R17,R16
+		BRCC L3
+		DEC R18
+		ADD R17,R16
+		PUSH R18
+		MOV R18,R17
+		POP R17
+RET 

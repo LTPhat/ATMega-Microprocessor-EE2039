@@ -1,0 +1,12 @@
+; Chương trình Delay bằng vòng lặp
+DELAY_1MS:
+LDI R16, 8
+LOOP1:
+LDI R17, 250
+LOOP2:
+NOP
+DEC R17
+BRNE LOOP2
+DEC R16
+BRNE LOOP1
+RET
