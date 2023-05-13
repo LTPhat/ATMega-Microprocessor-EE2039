@@ -7,9 +7,10 @@ Các thanh ghi điều khiển và trạng thái UCSRnA, UCSRnB, UCSRnC
 - Bit 6 (TXCn: Transmit Complete): Đặt lên 1 khi toàn bộ dữ liệu của một frame trong thanh ghi dịch phát được tuyền hết ra chân TxD
 - Bit 5 (UDREn): Đặt lên 1 khi dữ liệu trong bộ đệm phát chuyển đến thanh ghi dịch phát, khi UDREn = 0 không nên ghi dữ liệu mới vào thanh ghi UDRn
 - Bit 4 (FEn): Frame Error -> Bằng 1 khi ký tự tiếp theo trong bộ đệm thu bị lỗi khung truyền
-....
-....
+- Bit 3 (DORn): Đặt lên bằng 1 khi thu bị tràn data 
+- Bit 2 (UPEn): Đặt lên bằng 1 khi thu sai parity 
 - Bit 1(U2Xn): Nhân đôi Baud rate
+- Bit 0 (MPCMn): Đặt lên 1 cho phép truyền thông đa xử lý
 
 2) UCSRnB
 - Bit 7 (RXCIEn: RX Complete Interrupt Enable): Cho phép ngắt thu

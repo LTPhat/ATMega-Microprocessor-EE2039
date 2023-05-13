@@ -1,4 +1,4 @@
-; DIPSW * 9 --< Output BARLED
+; DIPSW * 9 --< Output LED 7 Đoạn
 
 
 .EQU INPUT_DDR=DDRA
@@ -26,7 +26,6 @@ RJMP MAIN
 .ORG 40
 
 MAIN:
-// SETUP PORT:
 	CLR R16
 	OUT INPUT_DDR,R16
 	SER R16

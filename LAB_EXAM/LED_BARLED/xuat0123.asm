@@ -1,4 +1,4 @@
-; Viết chương trình xuất 0123 ra BARLED
+; Viết chương trình xuất 0123 ra LED 7 đoạn
 
 
 .EQU OUTLED = PORTD
@@ -25,7 +25,7 @@ START:
 SCAN_4LA:     
 	LDI	   R18, 4	    ; Số lần quét LED   
 	LDI	   R19, 0xF7   ; Mã quét LED     				                
-	CLR R20		    ; Giá trị in ra LED		
+	CLR R20		    ; Giá trị in ra LED		R20 ban đầu bằng 0
 LOOP:	
 	LDI	   R17, 0xFF   ; Ban đầu LED tắt
 	OUT	   OUTLED, R17
@@ -44,8 +44,8 @@ LOOP:
 	CBI	 SL_LED ,nLE1	    
 	RCALL	 DELAY_5MS	    	
 	SEC			            
-	ROR	 R19		        	
-	DEC	 R18		        	
+	ROR	 R19		  	; Chuyển sang mã chọn LED kết tiếp      	
+	DEC	 R18		    ; Giảm số lần quét LED   	
 	BRNE	 LOOP	        	
 	RET
 ;------------------------------------------------------------

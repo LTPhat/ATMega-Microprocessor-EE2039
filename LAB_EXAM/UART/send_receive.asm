@@ -1,6 +1,4 @@
 
-;a)	Kết nối chân TxD và RxD của UART0 vào vào tín hiệu UART_TxD0 và UART_RxD0 trên header J85 ở khối UART.
-;b)	Kết nối dây USB-Serial vào kit thí nghiệm
 ;c)	Setup chương trình Hercules với baudrate 9600, 8 bit data, no parity, 1 stop, no handshake.
 ;d)	Sử dụng các ví dụ mẫu trong tài liệu thí nghiệm, viết chương trình khởi động UART0 với các thông số như trên, chờ nhận một byte từ UART0 và phát ngược lại UART0.
 
