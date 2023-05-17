@@ -49,5 +49,7 @@ B_PROCESS:
 
 ; Expand:
 ; If the phase difference:
-; 60 degree, set OCF0B = OCF0A / 3
-; 30 degree, set OCF0B = OCF0A / 6
+; 60 degree, set OCF0B = 2/3OCF0A 
+; 30 degree, set OCF0B = 5/6OCF0A
+; 45 degree, set OCF0B = 3/4OCF0A 
+
